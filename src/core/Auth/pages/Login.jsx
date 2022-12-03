@@ -1,4 +1,8 @@
 const LoginPage = () => {
+    
+    const submitHandler = (data)=>{
+            console.log(data);
+    }
     return (
         <section className="h-full gradient-form bg-gray-200 md:h-screen flex items-center justify-center">
         <div className="container py-12 px-6 h-full ">
@@ -11,7 +15,7 @@ const LoginPage = () => {
                         <div className="text-center pt-3">
                         <h4 className="text-xl font-semibold  mt-1 mb-12 pb-1">Login To App</h4>
                         </div>
-                        <form>
+                        <form onSubmit={submitHandler}>
                         <p className="mb-4">Please login to your account</p>
                         <div className="mb-4">
                             <input
@@ -31,7 +35,7 @@ const LoginPage = () => {
                         </div>
                         <div className="text-center pt-1 mb-12 pb-1">
                             <button
-                            className="inline-block bg-blue-700 hover:bg-blue-900 px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                            className="inline-block bg-blue-700 hover:bg-blue-900 px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
