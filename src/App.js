@@ -4,10 +4,12 @@ import SigneUpPage from "./core/Auth/pages/Register";
 import AuthProvider from "./core/Auth/Providers/AuthProvider";
 import Layout from "./core/Layout/Layout";
 import DashboardPage from "./modules/Dashboard/Dashboard";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <AuthProvider>
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
